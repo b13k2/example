@@ -1,0 +1,142 @@
+.modal-max-width {
+    width: 80%;
+}
+
+.dd {
+    margin: 0 32px;
+}
+
+.dd-list {
+    padding: 0;
+    list-style: none;
+}
+
+.dd-list .dd-list {
+    padding-left: 50px;
+}
+
+.dd-handle {
+    box-sizing: border-box;
+    min-width: 50px;
+    min-height: 50px;
+    position: absolute;
+    background-color: #f9f9f9;
+    cursor: move;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.dd-handle:before {
+    content: '≡';
+    font-size: 24px;
+    line-height: 40px;
+    display: block;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.dd-handle:hover {
+    background-color: #0ead87;
+    color: #ffffff;
+}
+
+.dd-content, .dd-placeholder {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.dd-content {
+    padding: 15px 10px 15px 75px;
+    background-color: #ffffff;
+    -webkit-transition: box-shadow 0.15s ease-out;
+    transition: box-shadow 0.15s ease-out;
+    line-height: 20px;
+}
+
+.dd-collapsed .dd-content {
+    padding-left: 100px;
+}
+
+.dd-content:hover {
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dd-content .item-visible {
+    margin: 0 10px;
+    color: #3b322c;
+    opacity: 0.4;
+}
+
+.dd-content .item-visible:hover {
+    opacity: 1;
+}
+
+.dd-content .block-options {
+    margin: 0;
+    margin-top: -10px;
+}
+
+.dd-content .block-options .dropdown-menu {
+    min-width: 216px;
+}
+
+.dd-placeholder {
+    min-height: 50px;
+    background: #f2fbff;
+    border: 1px dashed #b6bcbf;
+}
+
+.dd-collapsed .dd-list, .dd-collapsed .dd-collapse, .dd-expand {
+    display: none;
+}
+
+.dd-collapsed .dd-expand {
+    display: inline-block;
+}
+
+.dd-item {
+    position: relative;
+}
+
+.dd-item > button {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 0;
+    margin-left: 50px;
+    text-indent: 100%;
+    overflow: hidden;
+    background: none;
+    font-size: 14px;
+}
+
+.dd-item > button:before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-indent: 0;
+}
+
+.dd-item > button.dd-expand:before {
+    content: '+';
+}
+
+.dd-item > button.dd-collapse:before {
+    content: '-';
+}
+
+
+
+.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.dd-dragel .dd-handle {
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+

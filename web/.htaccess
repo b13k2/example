@@ -1,0 +1,15 @@
+# enable rewrite module
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ index.php [L]
+
+
+# не даем доступ к gitignore
+<Files .gitignore>
+  Require all denied
+</Files>
+

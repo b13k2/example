@@ -1,0 +1,12 @@
+# ядро YII2
+/vendor
+
+# локальные константы
+/constants/local.php
+
+# доступы к БД
+db.php
+
+# импортируемые файлы
+imported-files
+
